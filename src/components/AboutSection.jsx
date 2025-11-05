@@ -1,8 +1,6 @@
 import React from 'react';
 
 export default function AboutSection() {
-  const values = ['Klarheit', 'Authentizität', 'Kreativität', 'Wirkung'];
-
   return (
     <section id="about" className="relative bg-gray-50">
       <div className="mx-auto max-w-6xl px-6 py-20">
@@ -17,6 +15,7 @@ export default function AboutSection() {
               kreatives Denken, strategische Planung und ehrliche Kommunikation. Wir arbeiten
               partnerschaftlich, transparent und mit dem Ziel, Marken eine Seele zu geben.
             </p>
+
             <div className="mt-6 rounded-xl bg-white p-6 shadow-sm border border-gray-200">
               <p className="text-gray-900 font-medium">Mission</p>
               <p className="mt-2 text-gray-600">
@@ -27,15 +26,7 @@ export default function AboutSection() {
 
           <div>
             <div className="rounded-2xl border border-gray-200 bg-white p-6 shadow-sm">
-              <p className="text-gray-900 font-medium">Werte</p>
-              <ul className="mt-3 grid grid-cols-2 gap-3">
-                {values.map((v) => (
-                  <li key={v} className="rounded-lg bg-gray-50 px-4 py-3 text-gray-800 border border-gray-200">
-                    {v}
-                  </li>
-                ))}
-              </ul>
-              <blockquote className="mt-6 border-t border-gray-200 pt-6 text-gray-700 italic">
+              <blockquote className="text-gray-700 italic">
                 „Wir arbeiten mit Marken, die wachsen wollen – nicht um jeden Preis, sondern mit Haltung.“
               </blockquote>
             </div>
